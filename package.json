@@ -1,5 +1,5 @@
 {
-  "name": "archiver",
+  "name": "@kenmoini/archiver",
   "version": "7.0.2",
   "description": "a streaming interface for archive generation",
   "homepage": "https://github.com/kenmoini/node-archiver",
