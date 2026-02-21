@@ -1,6 +1,6 @@
 {
-  "name": "@kenmoini/archiver",
-  "version": "7.0.2",
+  "name": "kemo-archiver",
+  "version": "7.0.3",
   "description": "a streaming interface for archive generation",
   "homepage": "https://github.com/kenmoini/node-archiver",
   "author": {

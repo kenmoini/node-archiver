@@ -1,5 +1,7 @@
 # Archiver
 
+> Kemo Edition
+
 A streaming interface for archive generation
 
 Visit the [API documentation](https://www.archiverjs.com/) for a list of all methods available.
@@ -7,14 +9,14 @@ Visit the [API documentation](https://www.archiverjs.com/) for a list of all met
 ## Install
 
 ```bash
-npm install archiver --save
+npm install kemo-archiver --save
 ```
 
 ## Quick Start
 
 ```js
 import fs from "fs";
-import { ZipArchive } from "archiver";
+import { ZipArchive } from "kemo-archiver";
 
 // create a file to stream archive data to.
 const output = fs.createWriteStream(__dirname + "/example.zip");
