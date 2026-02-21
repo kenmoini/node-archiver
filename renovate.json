@@ -1,32 +1,53 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     "schedule:daily",
     ":maintainLockFilesMonthly",
     ":pinDevDependencies",
     ":semanticCommitsDisabled"
   ],
   "timezone": "America/Chicago",
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "packageRules": [
     {
-      "matchManagers": ["npm", "nvm"],
+      "matchManagers": [
+        "npm",
+        "nvm"
+      ],
       "separateMultipleMajor": true
     },
     {
-      "matchManagers": ["npm", "nvm"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchManagers": [
+        "npm",
+        "nvm"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true
     },
     {
-      "matchManagers": ["github-actions"],
-      "addLabels": ["ci", "github-actions"],
+      "matchManagers": [
+        "github-actions"
+      ],
+      "addLabels": [
+        "ci",
+        "github-actions"
+      ],
       "rangeStrategy": "pin"
     },
     {
-      "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true
     }
   ],
