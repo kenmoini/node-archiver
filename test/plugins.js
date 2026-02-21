@@ -8,7 +8,7 @@ import {
 } from "fs";
 import { assert } from "chai";
 import { mkdirp } from "mkdirp";
-import tar from "tar";
+import { Parser as TarParser } from "tar";
 import yauzl from "yauzl";
 import { TarArchive, ZipArchive } from "../index.js";
 import { binaryBuffer } from "./helpers/index.js";
@@ -47,7 +47,7 @@ describe("plugins", function () {
     var entries = {};
     before(function (done) {
       archive = new TarArchive();
-      var testStream = new tar.Parse();
+      var testStream = new TarParser();
       testStream.on("entry", function (entry) {
         actual.push(entry.path);
         entries[entry.path] = {
