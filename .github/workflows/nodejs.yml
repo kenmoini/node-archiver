@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
+  # Disable pull_request to prevent malicious PRs
+  # pull_request:
+  #   branches:
+  #     - master
 
 jobs:
   build:
